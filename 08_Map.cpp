@@ -28,11 +28,15 @@ m.empty() returns a boolean value to check if the map is empty, 1 if empty, 0 if
 
 
 Unordered map: 
-    does not stores in any order 
-	unordered_map<int,int> a; 
-	unordered_map<pair<int,int>,int> mpp; xxxxxx not possible to declare pair in unordered map.
-	o(1) in almost all cases
-	o(n) in the worst case, where n is the container size 
+does not stores in any order 
+unordered_map<int,int> a; 
+unordered_map<pair<int,int>,int> mpp; xxxxxx not possible to declare pair in unordered map.
+o(1) in almost all cases
+o(n) in the worst case, where n is the container size 
+
+
+Multimap:
+stores duplicate keys and doesnt overwrite the values 
 
 */
 
@@ -108,6 +112,11 @@ int main()
 
 	unordered_map<int,int> a; 
     //same operations as map.
+
+
+    multimap<int,int> mm;
+    mm.emplace(1,10);
+    mm.emplace(1,11);
                    
     return 0;
 }

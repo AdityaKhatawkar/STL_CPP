@@ -80,7 +80,7 @@ int main()
 
     // erase the nth element
     set<int>::iterator it = s.begin(); //returns the iterator of begin.
-    it++;
+    it++; //second element
     s.erase(it);
     for (auto i : s)
     {
